@@ -1,0 +1,41 @@
+On Matlab:
+-> Whatever you put in the comments right after you declare a function acts as a
+short description of your code that can been visualized by calling help with the
+name of your function. The feature won't work if you have a comment as the first line
+of code.
+
+Problem 1a)
+==========================
+(+) Very detailed explanation that includes the main idea of a wave arising from
+the update rule
+
+Problem 1b)
+==========================
+(+) Wave arises as an consequence of the update rules
+(+) Model description updated
+
+Problem 1c)
+==========================
+Line 22 could be an initialization with all zeros.
+Something to think about is what this model means physically.
+
+(+) Checking of neighbor behavior
+(+) There is a visual of a wave of length 5 propagating
+(-) Description of model not updated - if sitting and left neighbor standing, stand
+if standing and left neighbor sitting, sit
+
+
+Problem 1d)
+===========================
+Comment on model description:
+-> Not all ABMs have agent-agent interactions.
+-> Can the number of standing agents be restored to the original once the wave
+has been interrupted by the random action?
+
+(+) Well justified variability included in model.
+
+
+================================================================================
+For more details, please see me in my office hours.
+
+Problem set score: 93/100

@@ -1,0 +1,11 @@
+Problem 3a and b
+=======================================
+(+) Code is well commented and implements the model correctly. Great job!
+
+Minor: You can use the next line character in the title of plot so it's not
+chopped off 
+
+================================================================================
+For more details, please see me in my office hours.
+
+Problem set score: 100/100

@@ -1,0 +1,12 @@
+Problem 6 
+=====================================================
+
+6d) Why does the traffic stabilize again for large values of a?
+What do the plots in the original simulation show for one of these values?
+
+Overall, great work!
+
+===========================================================================
+For more details, please see me in my office hours.
+
+Problem set score: 90/100

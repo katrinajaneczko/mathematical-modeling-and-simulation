@@ -1,0 +1,37 @@
+Problem 8a
+===============================================
+(*) Problem description lacking addition of attraction 
+(+) Correct implementation of attraction 
+(*) Observations and explanation can improve by analyzing the role of the 
+zone of attraction and how it interacts with the other two
+
+Problem 8b
+================================================
+(*) Lines that move agents that are outside of domain into the domain should 
+not be necessary with periodic boundary conditions implemented. 
+(-) To accurately find the positions of teleporting agents on the other side, 
+their original position should still be accounted for 
+eg. line 42 should be X(ind,1) = X(ind,1) + ax(2)
+(+) Neighboring cells correctly determined
+(-) Positions of neighboring agents in boundary cases not carefully reconfigured 
+for periodic boundary conditions. pos0 must not be greater than 2 or less
+than -2. 
+
+
+Problem 8c
+================================================
+(+) Disregarding mistakes in other parts, observations here in line with 
+code
+
+
+Problem 8d
+================================================
+(+) Birds appear to see the wall when it's a distance of 1 away.
+(-) Birds act as if a new wall has been put 1 unit inside the domain, no birds
+cross this threshold
+
+===========================================================================
+(+) plus points (-) negative points (*) general comments
+For more details, please see me in my office hours.
+
+Problem set score: 80/100

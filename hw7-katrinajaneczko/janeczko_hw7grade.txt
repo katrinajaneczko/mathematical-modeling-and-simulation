@@ -1,0 +1,16 @@
+Problem 7a, 7b, 7c
+=========================================================
+
+Does at least one of the configurations explore the following:
+Domain change? Yes, 7b and 7c
+Three or more objects? Yes, 7a, 7b, 7c
+Configurations entered at different positions? Yes
+Change the load data file? No
+Interaction and movement? Explored interactions of different objects and 
+formations
+
+
+===========================================================================
+For more details, please see me in my office hours.
+
+Problem set score: 95/100

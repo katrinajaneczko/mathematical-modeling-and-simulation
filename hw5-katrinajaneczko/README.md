@@ -1,0 +1,20 @@
+# MATH2121 -- Homework #5
+Katrina Janeczko
+
+Spring 2022
+
+#### (b) Compare the solution plots for Heun’s Method and Euler’s Method using ∆t = 10. Why do the solutions differ?
+In class, we talked about how the different methods lead to different severities in error. Using Euler's Method, which is a first order method, we see that the global error is O(dt). Thus, this method demonstrates a linear decrease in error (when the step size is halved, the error decreases by a factor of two). So, we see that with a larger step size, in this case dt=10, the plot using Euler's Method produces jagged lines with sharper angles that follow the true curve fairly poorly, especially when compared with the plot for dt=10 using Heun's Method. 
+
+On the other hand, Heun's Method (or the Explicit Trapezoidal Rule) is a second order method in which the error is less severe when compared with Euler's Method. This is because this method finds the slopes of the tangents at each of the left and right ends of each time step interval, then averages the two to be used in calculating the next point. This results in a much closer-to-true approximation, since Euler's Method only looks at the interval's left side's tangent slope information. The resulting plot for dt=10 using Heun's Method is not perfectly smooth nor accurate, but it is a lot closer and smoother than that of Euler's. This result is expected since O(dt^2) is the error, meaning when the step size is halved, the error decreases by a factor of 4, which is a quadratic decrease in error. 
+
+It is obvious that Euler's Method, being first order, requires too small of step size to achieve good accuracy. Hence, we see fairy inaccurate results in our d=10 plot for this method. This can be explained with an example: for instancee, if 100 times more accuracy is needed, 100 times as many steps are required to achieve it in Euler's Method. But with Heun's Method, which is second order, reasonably accurate results can be produced even with a larger step size. This is because, to use the same example, if 100 times more accuracy is needed, only 10 times as many steps are needed to achieve it, so efficiency is dramatically improved. Additinally, note that over a large number of steps, the error accumulates more and more and the estimate diverges from the actual functional value much more for Euler's than for Heun's.
+<img width="516" alt="Screen Shot 2022-03-11 at 12 01 50 AM" src="https://user-images.githubusercontent.com/73796086/157805301-eb8ec896-c638-4780-8fe0-b146b23152db.png">
+<img width="514" alt="Screen Shot 2022-03-11 at 12 02 20 AM" src="https://user-images.githubusercontent.com/73796086/157805346-116f9ed1-f215-45b7-bfec-cb9197fa5dfa.png">
+
+
+#### (c) Now run Heun’s Method and Euler’s method with ∆t = 1. Compare the resulting solutions.
+The resulting solutions are very similar (at first glance, they appear to be identical, but at a closer inspection, they are very slightly different). Both plots have curves that are smooth, unlike the very jagged lines produced using Euler's Method with dt=10 in part (a) or the slightly jagged lines using Heun's Method. The similarity is expected because the step size of dt=1 is so small that the error for either method is small enough to produce a reasonably accurate result. Obviously, a smaller step size improves the severity of error for either method: in Euler's case, linearly, and in Heun's case, quadratically. Decreasing the step size from dt=10 to dt=1 improves error by 10 for Euler's (first order) and 100 for Heun's (second order), but for a total of 150 steps this does not make for drastically differing plots, so both methods produce close-to-true approximations with this small step size. 
+<img width="514" alt="Screen Shot 2022-03-11 at 12 03 07 AM" src="https://user-images.githubusercontent.com/73796086/157805422-df67a7b4-33e7-433f-876a-1ec5427ad104.png">
+<img width="514" alt="Screen Shot 2022-03-11 at 12 03 23 AM" src="https://user-images.githubusercontent.com/73796086/157805455-6690a175-dc26-4874-bb86-fc620377a7e3.png">
+

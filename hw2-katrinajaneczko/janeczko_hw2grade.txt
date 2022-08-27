@@ -1,0 +1,28 @@
+
+Problem 2a)
+==========================
+(+) Code well commented, correct histogram is plotted
+(+) Good analysis of model and histogram
+
+
+Problem 2b)
+==========================
+(+) Code well commented, runs
+
+The histogram should be fairly symmetric since the middle walker has
+equal probability of stepping up or down and is trapped between the
+other agents.
+For analysis, why is there no peak at 0?
+
+
+Problem 2c)
+===========================
+(+) Code well commented, correct histograms plotted
+
+In analysis - how do the histograms relate to the walker behavior?
+
+
+================================================================================
+For more details, please see me in my office hours.
+
+Problem set score: 90/100
